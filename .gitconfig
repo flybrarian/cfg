@@ -1,14 +1,13 @@
 # core {{{
 [core]
-    editor = /usr/bin/vim
-    excludesfile = /Users/npaolucci/.gitignore_global
+    excludesfile = /c/Users/Greg/.gitignore_global
     pager=less -x4
 
 #}}}
 # user {{{
 [user]
-    email = npaolucci@atlassian.com
-    name = Nicola Paolucci
+    email = greg@coatesoft.com
+    name = Greg Coates
 
 #}}}
 # color {{{
@@ -47,15 +46,6 @@
   whitespace = nowarn
 
 #}}}
-# difftools {{{
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
-
-# }}}
 # alias {{{
 [alias]
     st = status -s
@@ -78,6 +68,7 @@
     #"!git branch -ra | grep -v done"
     bra = branch -ra
     #list commands
+    graph = log --graph --pretty=oneline --abbrev-commit
     le = log --oneline --decorate
     ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
     ls1 = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
